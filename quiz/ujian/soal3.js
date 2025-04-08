@@ -4,14 +4,14 @@ fungsi ini akan me-return array 2 dimensi
 */
 function groupAnimals(animals) {
     // you can only write your code here!
-    grouppedAnimals = [];
-    usedIndice = [];
+    let grouppedAnimals = [];
+    let usedIndice = [];
     
     for (let i = 0; i < animals.length; i++) {
         if(!usedIndice.includes(i)) {
             usedIndice.push(i);
-            group = [animals[i]];
-            firstLetter = group[0][0];
+            let group = [animals[i]];
+            let firstLetter = group[0][0];
 
             for(let i2 = i + 1; i2 < animals.length; i2++){
                 if(animals[i2][0] === firstLetter) {
